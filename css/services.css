@@ -32,3 +32,21 @@ li {
     background-position: left center;
     background-size: 40px;
 }
+
+@media(max-width: 800px) {
+    #services {
+        padding: 50px 0;
+    }
+
+    .services-content {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    ul {
+        font-size: 0.8em;
+    }
+}

@@ -37,3 +37,24 @@ h4 {
     font-size: 2em;
     justify-content: space-between;
 }
+
+/*--------MEDIA FILES--------*/
+
+@media(max-width: 800px) {
+    #feedback {
+        height: 200px;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px) {
+    .footer-content {
+        width: 80%;
+    }
+
+    #feedback {
+        font-size: 0.8em;
+    }
+
+    h4 {font-size: 2em;}
+}

@@ -73,3 +73,14 @@ h5 {
 .submit-btn:hover {
     background-color: #AF734F;
 }
+
+@media(max-width: 500px) {
+    .popup {
+        width: 90%;
+    }
+
+    h5 {
+        font-size: 1.3em;
+        margin: 20px 0 10px;
+    }
+}

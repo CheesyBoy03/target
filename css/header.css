@@ -9,12 +9,12 @@ header {
     align-items: center;
     width: 70%;
     max-width: 1300px;
-    height: 80vh;
-    max-height: 800px;
-    margin: auto;
+    margin: 60px auto;
+    max-height: 80vh;
     color: #f4f4f4;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.4em;
+    box-sizing: border-box;
 }
 
 #header-content #about-me {
@@ -78,8 +78,62 @@ button:hover {
     /*border: 1px solid red;*/
 }
 
+/*      Фикс для отступа сверху       */
 @media(min-height: 1080px) {
     .triagle img {
         top: 1vh;
+    }
+}
+
+/*===== Маленькие ноутбуки/планшеты =====*/
+@media(max-width: 1025px) {
+    header {
+        font-size: 0.6em;
+    }
+
+    #header-content {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    #about-me button {
+        padding: 10px 20px;
+    }
+
+    #card-about-me img {
+        width: 350px;
+    }
+}
+
+/*===== Планшеты =====*/
+@media(max-width: 800px) {
+    #header-content {
+        width: 85%;
+    }
+
+    #header-content #about-me p {
+        margin: 50px 0;
+    }
+
+    #card-about-me img {
+        width: 300px;
+    }
+
+    #about-me {
+        font-size: 0.8em;
+    }
+
+    #about-me p {
+        font-size: 0.5em;
+    }
+}
+
+/*===== Смартфоны =====*/
+@media(max-width: 500px) {
+    #card-about-me {
+        display: none;
     }
 }
