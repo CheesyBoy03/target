@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="header-content">
+            <div id="about-me">
+                <h1>Услуги специалиста по таргетированной рекламе</h1>
+                <p>Привлекаю целевых клиентов в бизнес, которые <span class="bolder">принесут</span> Вам <span class="bolder">прибыль</span></p>
+                <button onclick="viewPopup()">Заполнить бриф</button>
+            </div>
+            <div id="card-about-me">
+                <img src="img/Person.svg" alt="">                      
+                <h2>Марина Иванова</h2>
+                <p>Ваш личный специалист по таргету</p>
+            </div>
+        </div>
+        <div class="triagle">
+            <img src="img/Polygon.svg" alt="">
+        </div>
+    </header>
+
+    <div id="services">
+        <div class="services-content">
+            <h3>Что входит в мои услуги?</h3>
+            <ul>
+                <li>Яндекс Директ</li>
+                <li>Таргетированная реклама Facebook, Instagram и Вконтакте</li>
+                <li>Google AdWords</li>
+                <li>Размещение и продвижение товаров на Avito или Юле</li>
+                <li>Размещение товаров на Яндекс Маркет</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h4>Свяжитесь со мной!</h4>
+            <div id="feedback">
+                <div id="social-networks">
+                    <a href="#"><img src="img/social-networks/vk.svg" alt=""></a>
+                    <a href="#" class="middle"><img src="img/social-networks/Instagram.svg" alt=""></a>
+                    <a href="#"><img src="img/social-networks/Telegram.svg" alt=""></a>
+                </div>
+                <div id="contacts">
+                    <a href="mailto:marinatarget@gmail.com">marinatarget@gmail.com</a>
+                    <a href="tel:+375293054530">+375 29 305 45 30</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Модальное окно-->
+    <div class="popup">
+        <div class="popup-container">
+            <div class="popup-header" onclick="closePopup()">&#10006;</div>
+            <form action="" method="post">
+                <h5>Чем я могу вам помочь?</h5>
+                <input type="text" placeholder="Какая услуга вам интересна?">
+                <h5>Опишите суть вашей компании/бренда</h5>
+                <input type="text" placeholder="Чем заниматеся ваша команда?">
+                <h5>Как можно с вами связаться?</h5>
+                <input type="text" placeholder="Контакты">
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <!--Модальное окно-->
+
+    <!--Скрипты-->
+    <script src="js/popup.js"></script>
+</body>
+</html>
