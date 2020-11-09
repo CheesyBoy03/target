@@ -10,18 +10,20 @@ header {
     width: 70%;
     max-width: 1300px;
     margin: 60px auto;
-    max-height: 80vh;
+    max-height: 70vh;
     color: #f4f4f4;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.4em;
     box-sizing: border-box;
+        border: 1px solid ;
+
 }
 
 #header-content #about-me {
     max-width: 800px;
 }
 
-#header-content #about-me h1 {
+h1 {
     color: #C88C6A;
     font-weight: bold;
     letter-spacing: 2px
@@ -31,7 +33,7 @@ span.bolder {
     font-weight: 500;    
 }
 
-#header-content #about-me p {
+p {
     margin: 80px 0;
     font-size: 1.5em;
 }
@@ -55,7 +57,10 @@ button:hover {
 
 #card-about-me {
     margin-bottom: 7%;
+    height: 50%;
     text-align: center;
+    margin: 20px 0 18px;
+    border: 1px solid ;
 }
 
 #card-about-me h2 {
@@ -121,19 +126,51 @@ button:hover {
     #card-about-me img {
         width: 300px;
     }
+}
+
+
+
+/*===== Смартфоны =====*/
+@media(min-width:500px){
+    .header-mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .triagle {
+        height: 5px;
+        top: 10px;
+    }
+
+    .triagle img {top: 0;}
+
+    #header-content {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+    }
 
     #about-me {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 
     #about-me p {
         font-size: 0.5em;
     }
-}
 
-/*===== Смартфоны =====*/
-@media(max-width: 500px) {
     #card-about-me {
-        display: none;
+        width: 150px;
+        font-size: 0.7em;
+    }
+
+    #card-about-me img {
+        width: 180px;
+    }
+
+    #card-about-me h2 {
+        padding: 10px 0;
     }
 }
