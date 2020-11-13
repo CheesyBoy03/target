@@ -27,6 +27,14 @@
 
 @media( max-height: 600px ){
   #header-content-mobile {
-    font-size: 0.7em;
+    font-size: 0.8em;
+  }
+
+  #header-content-mobile button {
+    font-size: 1.8em;
+  }
+
+  #header-content-mobile img {
+    width: 70%;
   }
 }
