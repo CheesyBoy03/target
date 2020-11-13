@@ -1,0 +1,40 @@
+#header-content-mobile {
+  width: 90%;
+  height: 85vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+#header-content-mobile img {
+  width: 80%;
+  margin: 0 auto 30px;
+}
+#header-content-mobile h1 {
+  font-size: 2.5em;
+}
+#header-content-mobile p {
+  margin: 0 0 20px;
+  color: #f4f4f4;
+}
+#header-content-mobile button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+@media( max-height: 600px ){
+  #header-content-mobile {
+    font-size: 0.8em;
+  }
+
+  #header-content-mobile button {
+    font-size: 1.3em;
+  }
+
+  #header-content-mobile img {
+    width: 70%;
+  }
+}
