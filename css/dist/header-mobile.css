@@ -1,6 +1,7 @@
 #header-content-mobile {
   width: 90%;
-  height: 85vh;
+  height: 75vh;
+  min-height: 550px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -23,18 +24,4 @@
 #header-content-mobile button {
   margin-bottom: 20px;
   padding: 10px 20px;
-}
-
-@media( max-height: 600px ){
-  #header-content-mobile {
-    font-size: 0.8em;
-  }
-
-  #header-content-mobile button {
-    font-size: 1.3em;
-  }
-
-  #header-content-mobile img {
-    width: 70%;
-  }
 }
